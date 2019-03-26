@@ -1867,7 +1867,6 @@ static struct dma_async_tx_descriptor *xilinx_dma_prep_slave_sg(
 	enum dma_transfer_direction direction, unsigned long flags,
 	void *context)
 {
-	printk(KERN_WARNING, "have enter the dma_prep_slave");
 	struct xilinx_dma_chan *chan = to_xilinx_chan(dchan);
 	struct xilinx_dma_tx_descriptor *desc;
 	struct xilinx_axidma_tx_segment *segment = NULL;
